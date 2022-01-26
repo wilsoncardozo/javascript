@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(86, 172, 187);
+            color: white; /*Isso é um comentário em CSS*/
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1 {
+            color: rgb(223, 209, 16);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!--Isso é um comentário em HTML-->
+    <p>Já me livrei da maldição.</p>
+
+    <script>
+    var n1 = Number(window.prompt('Digite um número')) //String
+    var n2 = Number(window.prompt('Digite outro número')) //String
+    var s = n1 + n2
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) //Lembrar da concatenação
+    // + serve para adição. Quando é (number + number) o javascript gera uma adição.
+    // + serve para concatenação. Quando é (string + string) o javascript gera uma concatenação.
+
+    // Se deixar o código como estava   window.alert('A soma dos valores é ' + s)   e digitar por exemplo o número 1 e depois o número 2, o resultado será 12. A questão aqui é que o window.prompt é reconhecido no JavaScript como uma string. Então basicame temos que fazer a conversão de string para number para que ocorra a soma.  Para isso usamos os comandos Number.parseInt(n) e Number.parseFloat(n). Observar bem maiúsculas e minúsculas desse comando pois o JS é case sensitive. No caso do parserInt é utilizado para números inteiros, no caso do parseFloat é para números reais. Na atual versão do JavaScript também pode ser usado somente Number que o JavaScript se vira para entender qual é o tipo de número.
+    </script>
+</body>
+</html>
